@@ -11,7 +11,7 @@ var songPosition: float
 var songPositionInBeats := 0
 var previousSongPositionInBeats := 0
 
-signal beatSignal(position)
+signal beatSignal(position: int)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
