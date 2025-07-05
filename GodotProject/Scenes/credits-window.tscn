@@ -1,0 +1,65 @@
+[gd_scene load_steps=2 format=3 uid="uid://emrqqbfmc3br"]
+
+[ext_resource type="Script" path="res://Scenes/credits_window.gd" id="1_yeo8s"]
+
+[node name="credits_window" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yeo8s")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 100.0
+offset_top = 50.0
+offset_right = -100.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 25
+text = "# ProjectRhythmCity-BbqJam25
+Game made during BBQ Jam 2025 by IndieCollective
+
+## Credits
+Crew members :
+- Tori
+- Oz
+- Azé
+- Hawkrex
+
+External resources :
+- Codeur Sage : for its wonderful tutorial about making rhythm game in Godot https://www.youtube.com/watch?v=G1hYDmoNSbA"
+
+[node name="exit_button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -18.5
+offset_top = -31.0
+offset_right = 18.5
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Exit"
+
+[connection signal="pressed" from="exit_button" to="." method="_on_exit_button_pressed"]
