@@ -15,7 +15,6 @@ func _ready() -> void:
 # Just add the music scene in the "level" folder and it will automatically be added.
 func fill_levels() -> void:
 	var level_paths = DirAccess.get_files_at(level_folder_path)
-	var i = 0
 	for level_path in level_paths:
 		var button = Button.new()
 		button.text = level_path.replace(".tscn", "").to_upper().replace("_", " ")

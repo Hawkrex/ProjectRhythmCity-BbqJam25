@@ -7,8 +7,8 @@ func _ready() -> void:
 	settings_menu.set_process(false)
 	
 # if start button is pressed, get into the game
-#func _on_start_button_pressed() -> void:
-	#get_tree().change_scene_to_file("res://start-menu.tscn")
+func _on_start_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/level_selection_screen.tscn")
 
 # if settings button pressed, open the settings window
 func _on_settings_button_pressed() -> void:
