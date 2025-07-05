@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://dnmrwkkirdyoh"]
+[gd_scene load_steps=3 format=3 uid="uid://dnmrwkkirdyoh"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://bnkq6ng7m7cvp" path="res://Assets/Sprites/RhythmBarFrame.png" id="1_l336q"]
+[ext_resource type="PackedScene" uid="uid://ckafxo2papx13" path="res://Scenes/RhythmGameControls/Target.tscn" id="2_rh3uo"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Frame" type="Sprite2D" parent="."]
+position = Vector2(960, 64)
+texture = ExtResource("1_l336q")
+
+[node name="Target" parent="." instance=ExtResource("2_rh3uo")]
+position = Vector2(64, 64)
