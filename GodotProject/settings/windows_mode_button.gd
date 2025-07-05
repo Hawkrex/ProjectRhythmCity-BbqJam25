@@ -1,6 +1,6 @@
 extends Control
 
-@onready var options_button = $HboxContainer/OptionsButton
+@onready var options_button = $HBoxContainer/OptionButton
 
 const WINDOW_MODE_ARRAY : Array[String] = [
 	"Full-Screen",
@@ -8,6 +8,14 @@ const WINDOW_MODE_ARRAY : Array[String] = [
 	"Borderless Window",
 	"Borderless Full-Screen"
 ]
+
+func _ready() -> void:
+	add_window_mode_items()
+
+func add_window_mode_items() -> void:
+	for window_mode in WINDOW_MODE_ARRAY:
+		options_button.add_item(window_mode)
+		
 
 func _on_option_button_item_selected(index: int) -> void:
 	match index:

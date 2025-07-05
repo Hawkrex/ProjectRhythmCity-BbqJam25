@@ -6,4 +6,7 @@
 [node name="windows_mode_button" instance=ExtResource("1_rtlr8")]
 script = ExtResource("2_xb1vn")
 
+[node name="Label" parent="HBoxContainer" index="0"]
+text = "Window Mode"
+
 [connection signal="item_selected" from="HBoxContainer/OptionButton" to="." method="_on_option_button_item_selected"]

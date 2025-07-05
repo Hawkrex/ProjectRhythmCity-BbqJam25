@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://0anfw5ubyut3"]
+[gd_scene load_steps=4 format=3 uid="uid://0anfw5ubyut3"]
 
 [ext_resource type="PackedScene" uid="uid://dat758oilqbv0" path="res://settings/hotkeys_rebind_button.tscn" id="1_mmvfr"]
+[ext_resource type="PackedScene" uid="uid://bp5jauj3wcdaa" path="res://settings/windows_mode_button.tscn" id="1_qa8kl"]
+[ext_resource type="PackedScene" uid="uid://diy41guki3v6n" path="res://settings/resolution_mode_button.tscn" id="2_3npbx"]
 
 [node name="settings_tabs" type="Control"]
 layout_mode = 3
@@ -81,29 +83,18 @@ theme_override_constants/margin_top = 24
 theme_override_constants/margin_right = 24
 theme_override_constants/margin_bottom = 24
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Graphics/MarginContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Graphics/MarginContainer"]
 layout_mode = 2
-theme_override_constants/separation = 64
 
-[node name="Label" type="Label" parent="TabContainer/Graphics/MarginContainer/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Graphics/MarginContainer/ScrollContainer"]
 layout_mode = 2
-text = "test"
+theme_override_constants/separation = 128
 
-[node name="Label2" type="Label" parent="TabContainer/Graphics/MarginContainer/VBoxContainer"]
+[node name="windows_mode_button" parent="TabContainer/Graphics/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_qa8kl")]
 layout_mode = 2
-text = "test"
 
-[node name="Label3" type="Label" parent="TabContainer/Graphics/MarginContainer/VBoxContainer"]
+[node name="resolution_mode_button" parent="TabContainer/Graphics/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_3npbx")]
 layout_mode = 2
-text = "test"
-
-[node name="Label4" type="Label" parent="TabContainer/Graphics/MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "test"
-
-[node name="Label5" type="Label" parent="TabContainer/Graphics/MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "test"
 
 [node name="Controls" type="TabBar" parent="TabContainer"]
 visible = false
