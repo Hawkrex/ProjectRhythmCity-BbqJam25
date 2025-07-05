@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bextw70xxibeh"]
 
-[ext_resource type="Script" path="res://settings/settings_menu.gd" id="1_rbiav"]
-[ext_resource type="PackedScene" uid="uid://0anfw5ubyut3" path="res://settings/settings_tabs.tscn" id="2_yymmx"]
+[ext_resource type="Script" path="res://Settings/settings_menu.gd" id="1_rbiav"]
+[ext_resource type="PackedScene" uid="uid://0anfw5ubyut3" path="res://Settings/settings_tabs.tscn" id="2_yymmx"]
 
 [node name="settings_menu" type="Control"]
 layout_mode = 3

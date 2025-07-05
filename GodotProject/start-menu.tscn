@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c04xdunmgufdk"]
+[gd_scene load_steps=4 format=3 uid="uid://c04xdunmgufdk"]
 
 [ext_resource type="Script" path="res://start_menu.gd" id="1_4ggv1"]
-[ext_resource type="PackedScene" uid="uid://bextw70xxibeh" path="res://settings/settings_menu.tscn" id="2_0lvmj"]
+[ext_resource type="PackedScene" uid="uid://bextw70xxibeh" path="res://Settings/settings_menu.tscn" id="2_0lvmj"]
+[ext_resource type="AudioStream" uid="uid://d26qveem5d0tv" path="res://Assets/Music/Time to business, guys.mp3" id="3_faeyr"]
 
 [node name="start-menu" type="Control"]
 layout_mode = 3
@@ -67,6 +68,12 @@ text = "Quit"
 [node name="settings_menu" parent="." instance=ExtResource("2_0lvmj")]
 visible = false
 layout_mode = 1
+
+[node name="music_stream_player" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_faeyr")
+autoplay = true
+bus = &"Music"
+parameters/looping = true
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/start_button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/settings_button" to="." method="_on_settings_button_pressed"]
