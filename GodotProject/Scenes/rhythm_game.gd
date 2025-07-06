@@ -15,6 +15,7 @@ var note = preload("res://Scenes/RhythmGameControls/Note.tscn")
 func _ready() -> void:
 	songName = SongChoice.chosen_song
 	load_song_file()
+	conductor.initialise(songBpm)
 	conductor.stream = load("res://Songs/" + songName + ".mp3")
 	conductor.play_with_beat_offset(beatsBeforeStart)
 
