@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://0anfw5ubyut3"]
 
-[ext_resource type="PackedScene" uid="uid://dat758oilqbv0" path="res://Settings/hotkeys_rebind_button.tscn" id="1_mmvfr"]
-[ext_resource type="PackedScene" uid="uid://bp5jauj3wcdaa" path="res://Settings/windows_mode_button.tscn" id="1_qa8kl"]
-[ext_resource type="PackedScene" uid="uid://cmke8vqiat2uv" path="res://Settings/audio_settings_slider.tscn" id="1_tu0k2"]
-[ext_resource type="PackedScene" uid="uid://diy41guki3v6n" path="res://Settings/resolution_mode_button.tscn" id="2_3npbx"]
+[ext_resource type="PackedScene" uid="uid://dat758oilqbv0" path="res://Scenes/Settings/hotkeys_rebind_button.tscn" id="1_mmvfr"]
+[ext_resource type="PackedScene" uid="uid://bp5jauj3wcdaa" path="res://Scenes/Settings/windows_mode_button.tscn" id="1_qa8kl"]
+[ext_resource type="PackedScene" uid="uid://cmke8vqiat2uv" path="res://Scenes/Settings/audio_settings_slider.tscn" id="1_tu0k2"]
+[ext_resource type="PackedScene" uid="uid://diy41guki3v6n" path="res://Scenes/Settings/resolution_mode_button.tscn" id="2_3npbx"]
 
 [node name="settings_tabs" type="Control"]
 layout_mode = 3

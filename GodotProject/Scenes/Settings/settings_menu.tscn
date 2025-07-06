@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bextw70xxibeh"]
 
-[ext_resource type="Script" path="res://Settings/settings_menu.gd" id="1_rbiav"]
-[ext_resource type="PackedScene" uid="uid://0anfw5ubyut3" path="res://Settings/settings_tabs.tscn" id="2_yymmx"]
+[ext_resource type="Script" path="res://Scenes/Settings/settings_menu.gd" id="1_rbiav"]
+[ext_resource type="PackedScene" uid="uid://0anfw5ubyut3" path="res://Scenes/Settings/settings_tabs.tscn" id="2_yymmx"]
 
 [node name="settings_menu" type="Control"]
 layout_mode = 3
@@ -30,6 +30,9 @@ theme_override_constants/separation = -48
 
 [node name="settings_label" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 24
 theme_override_font_sizes/font_size = 70
 text = "Settings"
 horizontal_alignment = 1

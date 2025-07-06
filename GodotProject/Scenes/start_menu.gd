@@ -23,9 +23,11 @@ func _on_settings_menu_exit_settings_menu() -> void:
 	settings_menu.set_process(false)
 	
 func _on_credits_button_pressed() -> void:
+	$MarginContainer.visible =  false
 	credits_window.visible = true
 	
 func _on_credits_window_exit_credits_window() -> void:
+	$MarginContainer.visible =  true
 	credits_window.visible = false
 	
 # if quit button pressed, quit the game
