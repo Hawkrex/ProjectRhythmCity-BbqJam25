@@ -48,4 +48,5 @@ size_flags_horizontal = 4
 size_flags_vertical = 8
 text = "Exit"
 
+[connection signal="exit_options_menu" from="MarginContainer/VBoxContainer/settings_tabs" to="." method="_on_settings_tabs_exit_options_menu"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/exit_button" to="." method="_on_exit_button_pressed"]

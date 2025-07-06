@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://0anfw5ubyut3"]
+[gd_scene load_steps=6 format=3 uid="uid://0anfw5ubyut3"]
 
 [ext_resource type="PackedScene" uid="uid://dat758oilqbv0" path="res://Scenes/Settings/hotkeys_rebind_button.tscn" id="1_mmvfr"]
+[ext_resource type="Script" path="res://Scenes/Settings/settings_tabs.gd" id="1_oh1x2"]
 [ext_resource type="PackedScene" uid="uid://bp5jauj3wcdaa" path="res://Scenes/Settings/windows_mode_button.tscn" id="1_qa8kl"]
 [ext_resource type="PackedScene" uid="uid://cmke8vqiat2uv" path="res://Scenes/Settings/audio_settings_slider.tscn" id="1_tu0k2"]
 [ext_resource type="PackedScene" uid="uid://diy41guki3v6n" path="res://Scenes/Settings/resolution_mode_button.tscn" id="2_3npbx"]
@@ -12,6 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_oh1x2")
 
 [node name="TabContainer" type="TabContainer" parent="."]
 layout_mode = 1
@@ -25,9 +27,10 @@ offset_bottom = -100.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 8
-current_tab = 0
+current_tab = 2
 
 [node name="Sound" type="TabBar" parent="TabContainer"]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -92,7 +95,6 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Controls" type="TabBar" parent="TabContainer"]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 2
 
