@@ -39,9 +39,9 @@ func play_with_beat_offset(beats: int) -> void:
 func _on_start_timer_timeout() -> void:
 	songPositionInBeats += 1
 	print("songPositionInBeats + 1")
-	if songPositionInBeats < beatsBeforeStart: # Waiting
+	if songPositionInBeats < beatsBeforeStart - 1: # Waiting
 		start_timer.start()
-	elif songPositionInBeats == beatsBeforeStart: # Just before playing song
+	elif songPositionInBeats == beatsBeforeStart - 1: # Just before playing song
 		start_timer.wait_time = start_timer.wait_time - AudioServer.get_time_to_next_mix() - AudioServer.get_output_latency()
 		start_timer.start()
 	else: # We can finally play the song

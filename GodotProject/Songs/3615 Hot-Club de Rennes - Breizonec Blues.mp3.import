@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cl4sxw3h6vxlo"
+path="res://.godot/imported/3615 Hot-Club de Rennes - Breizonec Blues.mp3-bd8155c57f23da008d48776ffa9e56e8.mp3str"
+
+[deps]
+
+source_file="res://Songs/3615 Hot-Club de Rennes - Breizonec Blues.mp3"
+dest_files=["res://.godot/imported/3615 Hot-Club de Rennes - Breizonec Blues.mp3-bd8155c57f23da008d48776ffa9e56e8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
