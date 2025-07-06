@@ -17,10 +17,11 @@ func set_action_name() -> void:
 	label.text = "Unassigned"
 	
 	match action_name:
-		"play_music":
-			label.text = "Play music"
 		"open_menu":
 			label.text = "Open menu"
+		"NoteInput":
+			label.text = "Play music"
+			
 
 # get the name of the keys in the OS to put them in the buttons
 func set_text_for_keys() -> void:

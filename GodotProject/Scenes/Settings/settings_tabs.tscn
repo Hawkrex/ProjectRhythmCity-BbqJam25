@@ -123,6 +123,7 @@ theme_override_constants/separation = 12
 
 [node name="hotkey_rebind_buttons" parent="TabContainer/Controls/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_mmvfr")]
 layout_mode = 2
+action_name = "NoteInput"
 
 [node name="hotkey_rebind_buttons2" parent="TabContainer/Controls/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_mmvfr")]
 layout_mode = 2
