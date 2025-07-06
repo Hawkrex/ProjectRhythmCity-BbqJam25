@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dnmrwkkirdyoh"]
+[gd_scene load_steps=7 format=3 uid="uid://bi22vveo6lpgh"]
 
 [ext_resource type="Script" path="res://Scenes/rhythm_game.gd" id="1_70u67"]
 [ext_resource type="Texture2D" uid="uid://bnkq6ng7m7cvp" path="res://Assets/Sprites/RhythmBarFrame.png" id="1_l336q"]
@@ -13,6 +13,7 @@ beatsBeforeStart = 9
 
 [node name="Conductor" parent="." instance=ExtResource("2_7h4d0")]
 stream = ExtResource("3_ow5vn")
+bus = &"Music"
 songBPM = 125
 
 [node name="Frame" type="Sprite2D" parent="."]

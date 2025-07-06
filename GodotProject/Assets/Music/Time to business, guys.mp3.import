@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d26qveem5d0tv"
+path="res://.godot/imported/Time to business, guys.mp3-7a5445bd044c27f74060c9ba7940e5c3.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Time to business, guys.mp3"
+dest_files=["res://.godot/imported/Time to business, guys.mp3-7a5445bd044c27f74060c9ba7940e5c3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
