@@ -19,7 +19,8 @@ func _process(delta: float) -> void:
 
 # if start button is pressed, get into the game
 func _on_start_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/music_choice_screen.tscn")
+	SongChoice.chosen_song = "3615 Hot-Club de Rennes - Breizonec Blues"
+	get_tree().change_scene_to_file("res://Scenes/RhythmGame.tscn")
 
 # if settings button pressed, open the settings window
 func _on_settings_button_pressed() -> void:
