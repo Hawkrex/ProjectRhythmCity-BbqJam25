@@ -1,15 +1,239 @@
-[gd_scene load_steps=7 format=3 uid="uid://bi22vveo6lpgh"]
+[gd_scene load_steps=17 format=3 uid="uid://bi22vveo6lpgh"]
 
 [ext_resource type="Script" path="res://Scenes/rhythm_game.gd" id="1_70u67"]
 [ext_resource type="Texture2D" uid="uid://bhlc0kfhpbil0" path="res://Assets/Sprites/RhythmBarFrame.png" id="1_l336q"]
 [ext_resource type="PackedScene" uid="uid://bp08xou7xvml3" path="res://Scenes/RhythmGameControls/conductor.tscn" id="2_7h4d0"]
+[ext_resource type="Texture2D" uid="uid://d1gymcrc2n0mc" path="res://Assets/Sprites/Bg_full.png" id="2_ic0xr"]
 [ext_resource type="PackedScene" uid="uid://ckafxo2papx13" path="res://Scenes/RhythmGameControls/Target.tscn" id="2_rh3uo"]
+[ext_resource type="Texture2D" uid="uid://bsxpwo3mhkhym" path="res://Assets/Sprites/Village_dark.png" id="3_lmp26"]
 [ext_resource type="AudioStream" uid="uid://cl4sxw3h6vxlo" path="res://Songs/3615 Hot-Club de Rennes - Breizonec Blues.mp3" id="3_ow5vn"]
 [ext_resource type="Texture2D" uid="uid://bdxxcf0gs4hdc" path="res://Assets/Sprites/Target.png" id="3_qeaul"]
+[ext_resource type="Texture2D" uid="uid://bys106iyi2esq" path="res://Assets/Sprites/Floor.png" id="4_57cvl"]
+[ext_resource type="Texture2D" uid="uid://cdftf18qqjeli" path="res://Assets/Sprites/Village_windows.png" id="4_dycvw"]
+[ext_resource type="Texture2D" uid="uid://ccfd1u64p06by" path="res://Assets/Sprites/Star_1.png" id="6_ie835"]
+[ext_resource type="Texture2D" uid="uid://nbfxx3o08j2x" path="res://Assets/Sprites/Star_2.png" id="7_mdlgw"]
+[ext_resource type="Texture2D" uid="uid://c5lkn2fj0b5ka" path="res://Assets/Sprites/Star_3.png" id="8_x1qre"]
+[ext_resource type="Texture2D" uid="uid://bsej3f4vpbxce" path="res://Assets/Sprites/Star_4.png" id="9_f65s1"]
+[ext_resource type="Texture2D" uid="uid://6eff2rl3ptdt" path="res://Assets/Sprites/Star_6.png" id="10_vwmbq"]
+[ext_resource type="Texture2D" uid="uid://twrkkrhccjon" path="res://Assets/Sprites/Mjv_on.png" id="11_omwgu"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_70u67")
 songName = "3615 Hot-Club de Rennes - Breizonec Blues"
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Background" type="Sprite2D" parent="Node2D"]
+position = Vector2(960, 540)
+texture = ExtResource("2_ic0xr")
+
+[node name="VillageDark" type="Sprite2D" parent="Node2D"]
+position = Vector2(950, 480)
+texture = ExtResource("3_lmp26")
+
+[node name="Lights" type="Sprite2D" parent="Node2D/VillageDark"]
+position = Vector2(-52, -18)
+texture = ExtResource("4_dycvw")
+
+[node name="Floor" type="Node2D" parent="Node2D"]
+
+[node name="Floor1" type="Sprite2D" parent="Node2D/Floor"]
+position = Vector2(167, 999)
+texture = ExtResource("4_57cvl")
+
+[node name="Floor2" type="Sprite2D" parent="Node2D/Floor"]
+position = Vector2(499, 999)
+texture = ExtResource("4_57cvl")
+
+[node name="Floor3" type="Sprite2D" parent="Node2D/Floor"]
+position = Vector2(831, 999)
+texture = ExtResource("4_57cvl")
+
+[node name="Floor4" type="Sprite2D" parent="Node2D/Floor"]
+position = Vector2(1163, 999)
+texture = ExtResource("4_57cvl")
+
+[node name="Floor5" type="Sprite2D" parent="Node2D/Floor"]
+position = Vector2(1495, 999)
+texture = ExtResource("4_57cvl")
+
+[node name="Floor6" type="Sprite2D" parent="Node2D/Floor"]
+position = Vector2(1827, 999)
+texture = ExtResource("4_57cvl")
+
+[node name="Stars" type="Node2D" parent="Node2D"]
+
+[node name="Star1" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(159, 277)
+texture = ExtResource("6_ie835")
+
+[node name="Star2" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(534, 273)
+texture = ExtResource("6_ie835")
+
+[node name="Star3" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(272, 427)
+texture = ExtResource("6_ie835")
+
+[node name="Star15" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(744, 175)
+texture = ExtResource("6_ie835")
+
+[node name="Star16" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1107, 86)
+texture = ExtResource("6_ie835")
+
+[node name="Star17" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1782, 35)
+texture = ExtResource("6_ie835")
+
+[node name="Star18" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1602, 268)
+texture = ExtResource("6_ie835")
+
+[node name="Star19" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1869, 404)
+texture = ExtResource("6_ie835")
+
+[node name="Star20" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1821, 568)
+texture = ExtResource("6_ie835")
+
+[node name="Star21" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1876, 780)
+texture = ExtResource("6_ie835")
+
+[node name="Star22" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1406, 248)
+texture = ExtResource("6_ie835")
+
+[node name="Star23" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1317, 182)
+texture = ExtResource("6_ie835")
+
+[node name="Star2_1" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(582, 71)
+texture = ExtResource("7_mdlgw")
+
+[node name="Star2_2" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(84, 551)
+texture = ExtResource("7_mdlgw")
+
+[node name="Star2_4" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1225, 188)
+texture = ExtResource("7_mdlgw")
+
+[node name="Star2_5" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1833, 694)
+texture = ExtResource("7_mdlgw")
+
+[node name="Star2_6" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1519, 323)
+texture = ExtResource("7_mdlgw")
+
+[node name="Star2_3" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(570, 223)
+texture = ExtResource("7_mdlgw")
+
+[node name="Star3_1" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(108, 382)
+texture = ExtResource("8_x1qre")
+
+[node name="Star3_4" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(347, 174)
+texture = ExtResource("8_x1qre")
+
+[node name="Star3_5" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(941, 154)
+texture = ExtResource("8_x1qre")
+
+[node name="Star3_6" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1314, 302)
+texture = ExtResource("8_x1qre")
+
+[node name="Star3_7" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1409, 42)
+texture = ExtResource("8_x1qre")
+
+[node name="Star3_8" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1599, 192)
+texture = ExtResource("8_x1qre")
+
+[node name="Star3_9" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1709, 417)
+texture = ExtResource("8_x1qre")
+
+[node name="Star3_10" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1882, 640)
+texture = ExtResource("8_x1qre")
+
+[node name="Star3_11" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1851, 265)
+texture = ExtResource("8_x1qre")
+
+[node name="Star3_3" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(73, 663)
+texture = ExtResource("8_x1qre")
+
+[node name="Star3_2" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(54, 176)
+texture = ExtResource("8_x1qre")
+
+[node name="Star4" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(44, 594)
+texture = ExtResource("9_f65s1")
+
+[node name="Star5" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(133, 481)
+texture = ExtResource("9_f65s1")
+
+[node name="Star6" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(48, 297)
+texture = ExtResource("9_f65s1")
+
+[node name="Star7" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(277, 262)
+texture = ExtResource("9_f65s1")
+
+[node name="Star8" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(488, 87)
+texture = ExtResource("9_f65s1")
+
+[node name="Star9" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(631, 172)
+texture = ExtResource("9_f65s1")
+
+[node name="Star10" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1412, 158)
+texture = ExtResource("9_f65s1")
+
+[node name="Star11" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1597, 380)
+texture = ExtResource("9_f65s1")
+
+[node name="Star12" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1798, 161)
+texture = ExtResource("9_f65s1")
+
+[node name="Star13" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1792, 495)
+texture = ExtResource("9_f65s1")
+
+[node name="Star14" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1789, 726)
+texture = ExtResource("9_f65s1")
+
+[node name="Star6_2" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(1716, 296)
+texture = ExtResource("10_vwmbq")
+
+[node name="Star6_1" type="Sprite2D" parent="Node2D/Stars"]
+position = Vector2(205, 235)
+texture = ExtResource("10_vwmbq")
+
+[node name="MJV_Panel" type="Sprite2D" parent="Node2D"]
+position = Vector2(263, 402)
+texture = ExtResource("11_omwgu")
 
 [node name="Conductor" parent="." instance=ExtResource("2_7h4d0")]
 stream = ExtResource("3_ow5vn")
