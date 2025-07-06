@@ -6,9 +6,20 @@ extends Control
 func _ready() -> void:
 	settings_menu.set_process(false)
 	
+func _process(delta: float) -> void:
+	if $MarginContainer.visible == false :
+		if credits_window.visible == true :
+			if Input.is_action_just_pressed("ui_cancel"):
+				$MarginContainer.visible = true
+				credits_window.visible = false
+	elif $MarginContainer.visible == true:
+		if Input.is_action_just_pressed("ui_cancel"):
+			get_tree().quit()
+			
+
 # if start button is pressed, get into the game
 func _on_start_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/level_selection_screen.tscn")
+	get_tree().change_scene_to_file("res://Scenes/RhythmGame.tscn")
 
 # if settings button pressed, open the settings window
 func _on_settings_button_pressed() -> void:
