@@ -9,7 +9,7 @@
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_70u67")
-beatsBeforeStart = 9
+songName = "3615 Hot-Club de Rennes - Breizonec Blues"
 
 [node name="Conductor" parent="." instance=ExtResource("2_7h4d0")]
 stream = ExtResource("3_ow5vn")
