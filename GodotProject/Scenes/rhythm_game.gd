@@ -11,12 +11,6 @@ var note = preload("res://Scenes/RhythmGameControls/Note.tscn")
 func _ready() -> void:
 	conductor.play_with_beat_offset(beatsBeforeStart)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
-
 func _on_conductor_beat_signal(position: int) -> void:
 	var note_instance = note.instantiate()
 	note_instance.global_position = target.global_position
