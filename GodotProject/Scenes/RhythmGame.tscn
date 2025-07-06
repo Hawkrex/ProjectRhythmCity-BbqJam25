@@ -1,15 +1,32 @@
-[gd_scene load_steps=7 format=3 uid="uid://bi22vveo6lpgh"]
+[gd_scene load_steps=10 format=3 uid="uid://bi22vveo6lpgh"]
 
 [ext_resource type="Script" path="res://Scenes/rhythm_game.gd" id="1_70u67"]
-[ext_resource type="Texture2D" uid="uid://bnkq6ng7m7cvp" path="res://Assets/Sprites/RhythmBarFrame.png" id="1_l336q"]
+[ext_resource type="Texture2D" uid="uid://bhlc0kfhpbil0" path="res://Assets/Sprites/RhythmBarFrame.png" id="1_l336q"]
 [ext_resource type="PackedScene" uid="uid://bp08xou7xvml3" path="res://Scenes/RhythmGameControls/conductor.tscn" id="2_7h4d0"]
+[ext_resource type="Texture2D" uid="uid://d1gymcrc2n0mc" path="res://Assets/Sprites/Bg_full.png" id="2_r6vtf"]
 [ext_resource type="PackedScene" uid="uid://ckafxo2papx13" path="res://Scenes/RhythmGameControls/Target.tscn" id="2_rh3uo"]
+[ext_resource type="Texture2D" uid="uid://bsxpwo3mhkhym" path="res://Assets/Sprites/Village_dark.png" id="3_ef5j1"]
 [ext_resource type="AudioStream" uid="uid://cl4sxw3h6vxlo" path="res://Songs/3615 Hot-Club de Rennes - Breizonec Blues.mp3" id="3_ow5vn"]
-[ext_resource type="Texture2D" uid="uid://dl0c0bj3hhssa" path="res://Assets/Sprites/Target.png" id="3_qeaul"]
+[ext_resource type="Texture2D" uid="uid://bdxxcf0gs4hdc" path="res://Assets/Sprites/Target.png" id="3_qeaul"]
+[ext_resource type="Texture2D" uid="uid://cdftf18qqjeli" path="res://Assets/Sprites/Village_windows.png" id="4_ksf3m"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_70u67")
 beatsBeforeStart = 9
+
+[node name="Scenery" type="Node2D" parent="."]
+
+[node name="Background" type="Sprite2D" parent="Scenery"]
+position = Vector2(960, 540)
+texture = ExtResource("2_r6vtf")
+
+[node name="VillageDark" type="Sprite2D" parent="Scenery"]
+position = Vector2(964, 639)
+texture = ExtResource("3_ef5j1")
+
+[node name="WindowLight" type="Sprite2D" parent="Scenery"]
+position = Vector2(911, 620)
+texture = ExtResource("4_ksf3m")
 
 [node name="Conductor" parent="." instance=ExtResource("2_7h4d0")]
 stream = ExtResource("3_ow5vn")
@@ -17,6 +34,7 @@ bus = &"Music"
 songBPM = 125
 
 [node name="Frame" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(960, 64)
 texture = ExtResource("1_l336q")
 
