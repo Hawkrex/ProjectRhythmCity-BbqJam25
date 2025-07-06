@@ -26,7 +26,7 @@ func _on_credits_button_pressed() -> void:
 	credits_window.visible = true
 	
 func _on_credits_window_exit_credits_window() -> void:
-		credits_window.visible = false
+	credits_window.visible = false
 	
 # if quit button pressed, quit the game
 func _on_quit_button_pressed() -> void:

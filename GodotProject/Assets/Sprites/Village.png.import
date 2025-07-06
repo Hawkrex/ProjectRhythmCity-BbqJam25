@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddrr8xn0ey4ge"
-valid=false
+uid="uid://xpnb2q20ja6x"
+path="res://.godot/imported/Village.png-f259abd5bd4411bd910e7eca7a4c0bc5.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://Assets/Sprites/Village.png"
+dest_files=["res://.godot/imported/Village.png-f259abd5bd4411bd910e7eca7a4c0bc5.ctex"]
 
 [params]
 

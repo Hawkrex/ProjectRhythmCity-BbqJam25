@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pw0wm7oujqdg"
-valid=false
+uid="uid://m1nec7libsil"
+path="res://.godot/imported/Bg_cutout.png-39a0a7fd6462020aa2729b787508bc80.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://Assets/Sprites/Bg_cutout.png"
+dest_files=["res://.godot/imported/Bg_cutout.png-39a0a7fd6462020aa2729b787508bc80.ctex"]
 
 [params]
 

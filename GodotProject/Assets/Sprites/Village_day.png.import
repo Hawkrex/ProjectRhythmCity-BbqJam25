@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dybos6hmex0da"
-path="res://.godot/imported/Bg_full.png-85af126575b2a8088512def3682e0421.ctex"
+uid="uid://dhve4st13isoe"
+path="res://.godot/imported/Village_day.png-3587c65ced0757da6166434b6b314656.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Bg_full.png"
-dest_files=["res://.godot/imported/Bg_full.png-85af126575b2a8088512def3682e0421.ctex"]
+source_file="res://Assets/Sprites/Village_day.png"
+dest_files=["res://.godot/imported/Village_day.png-3587c65ced0757da6166434b6b314656.ctex"]
 
 [params]
 

@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://c04xdunmgufdk"]
+[gd_scene load_steps=6 format=3 uid="uid://c04xdunmgufdk"]
 
 [ext_resource type="Script" path="res://Scenes/start_menu.gd" id="1_um66o"]
+[ext_resource type="Texture2D" uid="uid://dybos6hmex0da" path="res://Assets/Sprites/Bg_full.png" id="2_uek72"]
 [ext_resource type="PackedScene" uid="uid://bextw70xxibeh" path="res://Settings/settings_menu.tscn" id="2_ujra2"]
 [ext_resource type="PackedScene" uid="uid://emrqqbfmc3br" path="res://Scenes/credits-window.tscn" id="3_kbcyp"]
 [ext_resource type="AudioStream" uid="uid://d26qveem5d0tv" path="res://Assets/Music/Time to business, guys.mp3" id="3_qkymn"]
@@ -21,6 +22,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_uek72")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
