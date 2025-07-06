@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1u04gmq7lbte"
-path="res://.godot/imported/Note.png-3b3474c9a7d0b24fe46be79dc3c1d6aa.ctex"
+uid="uid://bsxpwo3mhkhym"
+path="res://.godot/imported/Village_dark.png-50333c43d690ee934a1ef4141a03c48a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Note.png"
-dest_files=["res://.godot/imported/Note.png-3b3474c9a7d0b24fe46be79dc3c1d6aa.ctex"]
+source_file="res://Assets/Sprites/Village_dark.png"
+dest_files=["res://.godot/imported/Village_dark.png-50333c43d690ee934a1ef4141a03c48a.ctex"]
 
 [params]
 
