@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b6fc2cx4t3sk0"]
 
 [ext_resource type="Script" path="res://Scenes/level_selection_screen.gd" id="1_npfx5"]
-[ext_resource type="Texture2D" uid="uid://dybos6hmex0da" path="res://Assets/Sprites/Bg_full.png" id="2_mq5yi"]
+[ext_resource type="Texture2D" uid="uid://d1gymcrc2n0mc" path="res://Assets/Sprites/Bg_full.png" id="2_mq5yi"]
 
 [node name="level_select_screen" type="CenterContainer"]
 anchors_preset = 15

@@ -10,3 +10,4 @@ Crew members :
 
 External resources :
 - Codeur Sage : for its wonderful tutorial about making rhythm game in Godot https://www.youtube.com/watch?v=G1hYDmoNSbA
+- Alexandr Zhelanov, https://soundcloud.com/alexandr-zhelanov for the main menu music.
