@@ -2,7 +2,6 @@ extends AudioStreamPlayer
 
 @onready var start_timer: Timer = $StartTimer
 
-@export var songBPM: int
 var beatsBeforeStart: int
 
 var secondsPerBeat: float
@@ -14,7 +13,7 @@ var previousSongPositionInBeats := 0
 signal beatSignal(position: int)
 
 # Called when the node enters the scene tree for the first time.
-func _ready() -> void:
+func initialise(songBPM) -> void:
 	secondsPerBeat = 60.0 / songBPM
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -38,7 +37,6 @@ func play_with_beat_offset(beats: int) -> void:
 
 func _on_start_timer_timeout() -> void:
 	songPositionInBeats += 1
-	print("songPositionInBeats + 1")
 	if songPositionInBeats < beatsBeforeStart - 1: # Waiting
 		start_timer.start()
 	elif songPositionInBeats == beatsBeforeStart - 1: # Just before playing song
